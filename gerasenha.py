@@ -12,16 +12,15 @@ def main():
     numeros = input("Deseja incluir números? (S/N): ")
     simbolos = input("Deseja incluir símbolos? (S/N): ")
     
-    caracteres = string.ascii_lowercase  # Inclui letras minúsculas
-
+    caracteres = string.ascii_lowercase  
     if letras.upper() == 'S':
-        caracteres += string.ascii_uppercase  # Inclui letras maiúsculas
+        caracteres += string.ascii_uppercase 
 
     if numeros.upper() == 'S':
-        caracteres += string.digits  # Inclui números
+        caracteres += string.digits  
 
     if simbolos.upper() == 'S':
-        caracteres += string.punctuation  # Inclui símbolos
+        caracteres += string.punctuation  
 
     senha = gerar_senha(comprimento, caracteres)
     print("Senha gerada:", senha)
